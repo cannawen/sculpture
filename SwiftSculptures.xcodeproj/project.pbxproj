@@ -13,6 +13,7 @@
 		B0541B4E1BC8706E00C99260 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4D1BC8706E00C99260 /* Images.xcassets */; };
 		B086A63C1BD1DDD6007DEA7C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FBA2DD1BD1D4A80008880F /* HomeViewController.swift */; };
 		B086A63F1BD1DE82007DEA7C /* UIViewController+TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B086A63E1BD1DE82007DEA7C /* UIViewController+TestHelper.swift */; };
+		B086BB661BD290A200A027D0 /* HomeViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B086BB651BD290A200A027D0 /* HomeViewControllerSpec.swift */; };
 		B0EE4CE01BD1E925005CDBC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4A1BC8706E00C99260 /* Main.storyboard */; };
 		B0EE4CE11BD1E925005CDBC6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4F1BC8706E00C99260 /* LaunchScreen.xib */; };
 		B0EE4CE31BD1EE60005CDBC6 /* UIControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EE4CE21BD1EE60005CDBC6 /* UIControl+TestHelpers.swift */; };
@@ -30,7 +31,7 @@
 			containerPortal = B0541B361BC8706D00C99260 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B0541B3D1BC8706D00C99260;
-			remoteInfo = "SwiftSculptures";
+			remoteInfo = SwiftSculptures;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -46,6 +47,7 @@
 		B0541B561BC8706E00C99260 /* SwiftSculpturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSculpturesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0541B5B1BC8706E00C99260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B086A63E1BD1DE82007DEA7C /* UIViewController+TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+TestHelper.swift"; sourceTree = "<group>"; };
+		B086BB651BD290A200A027D0 /* HomeViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewControllerSpec.swift; sourceTree = "<group>"; };
 		B0EE4CE21BD1EE60005CDBC6 /* UIControl+TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+TestHelpers.swift"; sourceTree = "<group>"; };
 		B0EE4CE41BD1F59B005CDBC6 /* UIBarButtonItem+TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+TestHelpers.swift"; sourceTree = "<group>"; };
 		B0EE4CE81BD289A6005CDBC6 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -115,10 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				B0541B5A1BC8706E00C99260 /* Supporting Files */,
-				B0FBA2E21BD1DB490008880F /* PictureTakingViewControllerSpec.swift */,
-				B086A63E1BD1DE82007DEA7C /* UIViewController+TestHelper.swift */,
-				B0EE4CE21BD1EE60005CDBC6 /* UIControl+TestHelpers.swift */,
-				B0EE4CE41BD1F59B005CDBC6 /* UIBarButtonItem+TestHelpers.swift */,
+				B086BB641BD2907B00A027D0 /* View Controllers */,
+				B086BB631BD2905D00A027D0 /* UIKit Extensions */,
 			);
 			path = SwiftSculpturesTests;
 			sourceTree = "<group>";
@@ -129,6 +129,25 @@
 				B0541B5B1BC8706E00C99260 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B086BB631BD2905D00A027D0 /* UIKit Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B086A63E1BD1DE82007DEA7C /* UIViewController+TestHelper.swift */,
+				B0EE4CE21BD1EE60005CDBC6 /* UIControl+TestHelpers.swift */,
+				B0EE4CE41BD1F59B005CDBC6 /* UIBarButtonItem+TestHelpers.swift */,
+			);
+			name = "UIKit Extensions";
+			sourceTree = "<group>";
+		};
+		B086BB641BD2907B00A027D0 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0FBA2E21BD1DB490008880F /* PictureTakingViewControllerSpec.swift */,
+				B086BB651BD290A200A027D0 /* HomeViewControllerSpec.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 		B0FBA2DF1BD1D9E60008880F /* Common Elements */ = {
@@ -173,7 +192,7 @@
 			dependencies = (
 			);
 			name = SwiftSculptures;
-			productName = "SwiftSculptures";
+			productName = SwiftSculptures;
 			productReference = B0541B3E1BC8706D00C99260 /* SwiftSculptures.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -191,7 +210,7 @@
 				B0541B581BC8706E00C99260 /* PBXTargetDependency */,
 			);
 			name = SwiftSculpturesTests;
-			productName = "SwiftSculpturesTests";
+			productName = SwiftSculpturesTests;
 			productReference = B0541B561BC8706E00C99260 /* SwiftSculpturesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -272,6 +291,7 @@
 			files = (
 				B086A63F1BD1DE82007DEA7C /* UIViewController+TestHelper.swift in Sources */,
 				B0FBA2E31BD1DB490008880F /* PictureTakingViewControllerSpec.swift in Sources */,
+				B086BB661BD290A200A027D0 /* HomeViewControllerSpec.swift in Sources */,
 				B0EE4CE31BD1EE60005CDBC6 /* UIControl+TestHelpers.swift in Sources */,
 				B0EE4CE61BD1F9A9005CDBC6 /* PictureTakingViewController.swift in Sources */,
 				B0EE4CE51BD1F59B005CDBC6 /* UIBarButtonItem+TestHelpers.swift in Sources */,
