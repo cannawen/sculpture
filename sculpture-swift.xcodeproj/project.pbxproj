@@ -13,8 +13,8 @@
 		B0541B4C1BC8706E00C99260 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4A1BC8706E00C99260 /* Main.storyboard */; };
 		B0541B4E1BC8706E00C99260 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4D1BC8706E00C99260 /* Images.xcassets */; };
 		B0541B511BC8706E00C99260 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4F1BC8706E00C99260 /* LaunchScreen.xib */; };
-		B0541B5D1BC8706E00C99260 /* sculpture_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0541B5C1BC8706E00C99260 /* sculpture_swiftTests.swift */; };
 		B0FBA2DE1BD1D4A80008880F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FBA2DD1BD1D4A80008880F /* HomeViewController.swift */; };
+		B0FBA2E31BD1DB490008880F /* PictureTakingViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FBA2E21BD1DB490008880F /* PictureTakingViewControllerSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,8 @@
 		B0541B501BC8706E00C99260 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B0541B561BC8706E00C99260 /* sculpture-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sculpture-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0541B5B1BC8706E00C99260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0541B5C1BC8706E00C99260 /* sculpture_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sculpture_swiftTests.swift; sourceTree = "<group>"; };
 		B0FBA2DD1BD1D4A80008880F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B0FBA2E21BD1DB490008880F /* PictureTakingViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureTakingViewControllerSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +103,8 @@
 		B0541B591BC8706E00C99260 /* sculpture-swiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				B0541B5C1BC8706E00C99260 /* sculpture_swiftTests.swift */,
 				B0541B5A1BC8706E00C99260 /* Supporting Files */,
+				B0FBA2E21BD1DB490008880F /* PictureTakingViewControllerSpec.swift */,
 			);
 			path = "sculpture-swiftTests";
 			sourceTree = "<group>";
@@ -253,7 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0541B5D1BC8706E00C99260 /* sculpture_swiftTests.swift in Sources */,
+				B0FBA2E31BD1DB490008880F /* PictureTakingViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
