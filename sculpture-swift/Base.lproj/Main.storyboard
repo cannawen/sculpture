@@ -41,17 +41,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0pN-oZ-ivt">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0pN-oZ-ivt">
+                                <rect key="frame" x="0.0" y="64" width="600" height="246"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9c-yc-K5L">
+                                <rect key="frame" x="0.0" y="354" width="600" height="246"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pud-h1-tTo">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Title" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mkp-8b-wKx">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="3dy-pl-SHZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="mkp-8b-wKx" secondAttribute="trailing" id="6dx-tp-T7g"/>
+                                            <constraint firstItem="mkp-8b-wKx" firstAttribute="leading" secondItem="Pud-h1-tTo" secondAttribute="leading" id="B3t-kn-50q"/>
+                                            <constraint firstItem="mkp-8b-wKx" firstAttribute="top" secondItem="Pud-h1-tTo" secondAttribute="top" id="H7b-ta-sbt"/>
+                                            <constraint firstAttribute="height" constant="100" id="Kcu-cY-tZB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Pud-h1-tTo" firstAttribute="leading" secondItem="a9c-yc-K5L" secondAttribute="leading" id="8H1-VV-H81"/>
+                                    <constraint firstItem="Pud-h1-tTo" firstAttribute="top" secondItem="a9c-yc-K5L" secondAttribute="top" id="Hus-Co-eEC"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pud-h1-tTo" secondAttribute="trailing" id="RJp-8W-RCH"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="0pN-oZ-ivt" secondAttribute="trailing" id="Gip-hc-MlD"/>
+                            <constraint firstAttribute="bottom" secondItem="a9c-yc-K5L" secondAttribute="bottom" id="KQA-ld-Ufc"/>
+                            <constraint firstItem="0pN-oZ-ivt" firstAttribute="height" secondItem="a9c-yc-K5L" secondAttribute="height" id="Msu-lQ-7vY"/>
                             <constraint firstAttribute="bottom" secondItem="0pN-oZ-ivt" secondAttribute="bottom" id="WwW-qc-MEv"/>
+                            <constraint firstItem="a9c-yc-K5L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aDo-dA-i1K"/>
                             <constraint firstItem="0pN-oZ-ivt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bCJ-Ad-vDe"/>
                             <constraint firstItem="0pN-oZ-ivt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cGh-1v-J5f"/>
+                            <constraint firstAttribute="trailing" secondItem="0pN-oZ-ivt" secondAttribute="trailing" id="f1U-5N-wak"/>
+                            <constraint firstItem="a9c-yc-K5L" firstAttribute="top" secondItem="0pN-oZ-ivt" secondAttribute="bottom" constant="44" id="jXw-Yy-Wb3"/>
+                            <constraint firstItem="0pN-oZ-ivt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jt6-J4-xfA"/>
+                            <constraint firstAttribute="trailing" secondItem="a9c-yc-K5L" secondAttribute="trailing" id="v0C-Ve-rAG"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Gip-hc-MlD"/>
+                                <exclude reference="WwW-qc-MEv"/>
+                                <exclude reference="bCJ-Ad-vDe"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="P2D-oX-dSk">
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="1cS-fw-Iea">
