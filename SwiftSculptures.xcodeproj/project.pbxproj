@@ -30,7 +30,7 @@
 			containerPortal = B0541B361BC8706D00C99260 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B0541B3D1BC8706D00C99260;
-			remoteInfo = "sculpture-swift";
+			remoteInfo = "SwiftSculptures";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -173,7 +173,7 @@
 			dependencies = (
 			);
 			name = SwiftSculptures;
-			productName = "sculpture-swift";
+			productName = "SwiftSculptures";
 			productReference = B0541B3E1BC8706D00C99260 /* SwiftSculptures.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -191,7 +191,7 @@
 				B0541B581BC8706E00C99260 /* PBXTargetDependency */,
 			);
 			name = SwiftSculpturesTests;
-			productName = "sculpture-swiftTests";
+			productName = "SwiftSculpturesTests";
 			productReference = B0541B561BC8706E00C99260 /* SwiftSculpturesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  sculpture-swift
+//  SwiftSculptures
 //
 //  Created by Canna Wen on 2015-10-09.
 //  Copyright (c) 2015 Canna Wen. All rights reserved.
