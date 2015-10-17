@@ -4,10 +4,35 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Home View Controller-->
+        <scene sceneID="0Yl-F3-77E">
+            <objects>
+                <viewController id="WT2-yS-evl" customClass="HomeViewController" customModule="sculpture_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iXK-CQ-071"/>
+                        <viewControllerLayoutGuide type="bottom" id="t3n-2h-CEv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tlg-wH-kvM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WMq-dp-2uX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="eHI-uD-7nO">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="sQO-ze-fR2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3h3-Em-Bvn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379" y="280"/>
+        </scene>
+        <!--Picture Taking View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="sculpture_swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PictureTakingViewController" customModule="sculpture_swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -41,7 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="385" y="280"/>
+            <point key="canvasLocation" x="1029" y="280"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZVN-Hn-Vpw">
@@ -52,7 +77,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="d63-Kd-J7X"/>
+                        <segue destination="WT2-yS-evl" kind="relationship" relationship="rootViewController" id="PO2-AG-vqC"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F87-84-KGU" userLabel="First Responder" sceneMemberID="firstResponder"/>

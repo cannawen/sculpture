@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		B0541B441BC8706E00C99260 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0541B431BC8706E00C99260 /* AppDelegate.swift */; };
 		B0541B471BC8706E00C99260 /* sculpture_swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0541B451BC8706E00C99260 /* sculpture_swift.xcdatamodeld */; };
-		B0541B491BC8706E00C99260 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0541B481BC8706E00C99260 /* MainViewController.swift */; };
+		B0541B491BC8706E00C99260 /* PictureTakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0541B481BC8706E00C99260 /* PictureTakingViewController.swift */; };
 		B0541B4C1BC8706E00C99260 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4A1BC8706E00C99260 /* Main.storyboard */; };
 		B0541B4E1BC8706E00C99260 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4D1BC8706E00C99260 /* Images.xcassets */; };
 		B0541B511BC8706E00C99260 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4F1BC8706E00C99260 /* LaunchScreen.xib */; };
 		B0541B5D1BC8706E00C99260 /* sculpture_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0541B5C1BC8706E00C99260 /* sculpture_swiftTests.swift */; };
+		B0FBA2DE1BD1D4A80008880F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FBA2DD1BD1D4A80008880F /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +32,14 @@
 		B0541B421BC8706E00C99260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0541B431BC8706E00C99260 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0541B461BC8706E00C99260 /* sculpture_swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = sculpture_swift.xcdatamodel; sourceTree = "<group>"; };
-		B0541B481BC8706E00C99260 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B0541B481BC8706E00C99260 /* PictureTakingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureTakingViewController.swift; sourceTree = "<group>"; };
 		B0541B4B1BC8706E00C99260 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0541B4D1BC8706E00C99260 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B0541B501BC8706E00C99260 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B0541B561BC8706E00C99260 /* sculpture-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sculpture-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0541B5B1BC8706E00C99260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0541B5C1BC8706E00C99260 /* sculpture_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sculpture_swiftTests.swift; sourceTree = "<group>"; };
+		B0FBA2DD1BD1D4A80008880F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,12 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				B0541B431BC8706E00C99260 /* AppDelegate.swift */,
-				B0541B481BC8706E00C99260 /* MainViewController.swift */,
+				B0541B481BC8706E00C99260 /* PictureTakingViewController.swift */,
 				B0541B4A1BC8706E00C99260 /* Main.storyboard */,
 				B0541B4D1BC8706E00C99260 /* Images.xcassets */,
 				B0541B4F1BC8706E00C99260 /* LaunchScreen.xib */,
 				B0541B451BC8706E00C99260 /* sculpture_swift.xcdatamodeld */,
 				B0541B411BC8706D00C99260 /* Supporting Files */,
+				B0FBA2DD1BD1D4A80008880F /* HomeViewController.swift */,
 			);
 			path = "sculpture-swift";
 			sourceTree = "<group>";
@@ -215,9 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0541B491BC8706E00C99260 /* MainViewController.swift in Sources */,
+				B0541B491BC8706E00C99260 /* PictureTakingViewController.swift in Sources */,
 				B0541B441BC8706E00C99260 /* AppDelegate.swift in Sources */,
 				B0541B471BC8706E00C99260 /* sculpture_swift.xcdatamodeld in Sources */,
+				B0FBA2DE1BD1D4A80008880F /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

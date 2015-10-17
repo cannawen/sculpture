@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  PictureTakingViewController.swift
 //  sculpture-swift
 //
 //  Created by Canna Wen on 2015-10-09.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController : UIViewController {
+class PictureTakingViewController : UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     
@@ -18,7 +18,7 @@ class MainViewController : UIViewController {
 
 // MARK: - Taking pictures
 
-extension MainViewController : UIImagePickerControllerDelegate {
+extension PictureTakingViewController : UIImagePickerControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad();
@@ -36,7 +36,7 @@ extension MainViewController : UIImagePickerControllerDelegate {
     
 }
 
-extension MainViewController : UINavigationControllerDelegate {
+extension PictureTakingViewController : UINavigationControllerDelegate {
     
 }
 
