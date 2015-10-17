@@ -10,12 +10,12 @@
 		B0541B441BC8706E00C99260 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0541B431BC8706E00C99260 /* AppDelegate.swift */; };
 		B0541B471BC8706E00C99260 /* sculpture_swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0541B451BC8706E00C99260 /* sculpture_swift.xcdatamodeld */; };
 		B0541B491BC8706E00C99260 /* PictureTakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0541B481BC8706E00C99260 /* PictureTakingViewController.swift */; };
-		B0541B4C1BC8706E00C99260 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4A1BC8706E00C99260 /* Main.storyboard */; };
 		B0541B4E1BC8706E00C99260 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4D1BC8706E00C99260 /* Images.xcassets */; };
-		B0541B511BC8706E00C99260 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4F1BC8706E00C99260 /* LaunchScreen.xib */; };
 		B086A63C1BD1DDD6007DEA7C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FBA2DD1BD1D4A80008880F /* HomeViewController.swift */; };
 		B086A63D1BD1DDD9007DEA7C /* PictureTakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0541B481BC8706E00C99260 /* PictureTakingViewController.swift */; };
 		B086A63F1BD1DE82007DEA7C /* UIViewController+TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B086A63E1BD1DE82007DEA7C /* UIViewController+TestHelper.swift */; };
+		B0EE4CE01BD1E925005CDBC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4A1BC8706E00C99260 /* Main.storyboard */; };
+		B0EE4CE11BD1E925005CDBC6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4F1BC8706E00C99260 /* LaunchScreen.xib */; };
 		B0FBA2DE1BD1D4A80008880F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FBA2DD1BD1D4A80008880F /* HomeViewController.swift */; };
 		B0FBA2E31BD1DB490008880F /* PictureTakingViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FBA2E21BD1DB490008880F /* PictureTakingViewControllerSpec.swift */; };
 /* End PBXBuildFile section */
@@ -67,8 +67,8 @@
 		B0541B351BC8706D00C99260 = {
 			isa = PBXGroup;
 			children = (
-				B0541B401BC8706D00C99260 /* sculpture-swift */,
-				B0541B591BC8706E00C99260 /* sculpture-swiftTests */,
+				B0541B401BC8706D00C99260 /* SwiftSculptures */,
+				B0541B591BC8706E00C99260 /* SwiftSculpturesTests */,
 				B0541B3F1BC8706D00C99260 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,7 +82,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B0541B401BC8706D00C99260 /* sculpture-swift */ = {
+		B0541B401BC8706D00C99260 /* SwiftSculptures */ = {
 			isa = PBXGroup;
 			children = (
 				B0FBA2E11BD1DA2E0008880F /* Storyboards and Nibs */,
@@ -90,7 +90,7 @@
 				B0FBA2DF1BD1D9E60008880F /* Common Elements */,
 				B0541B411BC8706D00C99260 /* Supporting Files */,
 			);
-			path = "sculpture-swift";
+			path = SwiftSculptures;
 			sourceTree = "<group>";
 		};
 		B0541B411BC8706D00C99260 /* Supporting Files */ = {
@@ -104,14 +104,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B0541B591BC8706E00C99260 /* sculpture-swiftTests */ = {
+		B0541B591BC8706E00C99260 /* SwiftSculpturesTests */ = {
 			isa = PBXGroup;
 			children = (
 				B0541B5A1BC8706E00C99260 /* Supporting Files */,
 				B0FBA2E21BD1DB490008880F /* PictureTakingViewControllerSpec.swift */,
 				B086A63E1BD1DE82007DEA7C /* UIViewController+TestHelper.swift */,
 			);
-			path = "sculpture-swiftTests";
+			path = SwiftSculpturesTests;
 			sourceTree = "<group>";
 		};
 		B0541B5A1BC8706E00C99260 /* Supporting Files */ = {
@@ -227,8 +227,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0541B4C1BC8706E00C99260 /* Main.storyboard in Resources */,
-				B0541B511BC8706E00C99260 /* LaunchScreen.xib in Resources */,
+				B0EE4CE01BD1E925005CDBC6 /* Main.storyboard in Resources */,
+				B0EE4CE11BD1E925005CDBC6 /* LaunchScreen.xib in Resources */,
 				B0541B4E1BC8706E00C99260 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,7 +382,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "sculpture-swift/Info.plist";
+				INFOPLIST_FILE = SwiftSculptures/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = SwiftSculptures;
 			};
@@ -392,7 +392,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "sculpture-swift/Info.plist";
+				INFOPLIST_FILE = SwiftSculptures/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = SwiftSculptures;
 			};
@@ -410,10 +410,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "sculpture-swiftTests/Info.plist";
+				INFOPLIST_FILE = SwiftSculpturesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = SwiftSculpturesTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sculpture-swift.app/sculpture-swift";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftSculptures.app/SwiftSculptures";
 			};
 			name = Debug;
 		};
@@ -425,10 +425,10 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "sculpture-swiftTests/Info.plist";
+				INFOPLIST_FILE = SwiftSculpturesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = SwiftSculpturesTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sculpture-swift.app/sculpture-swift";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftSculptures.app/SwiftSculptures";
 			};
 			name = Release;
 		};
