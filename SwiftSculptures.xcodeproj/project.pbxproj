@@ -19,6 +19,7 @@
 		B0EE4CE51BD1F59B005CDBC6 /* UIBarButtonItem+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EE4CE41BD1F59B005CDBC6 /* UIBarButtonItem+TestHelpers.swift */; };
 		B0EE4CE61BD1F9A9005CDBC6 /* PictureTakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0541B481BC8706E00C99260 /* PictureTakingViewController.swift */; };
 		B0EE4CE71BD1F9EC005CDBC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4A1BC8706E00C99260 /* Main.storyboard */; };
+		B0EE4CE91BD289A6005CDBC6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EE4CE81BD289A6005CDBC6 /* CustomTextField.swift */; };
 		B0FBA2DE1BD1D4A80008880F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FBA2DD1BD1D4A80008880F /* HomeViewController.swift */; };
 		B0FBA2E31BD1DB490008880F /* PictureTakingViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FBA2E21BD1DB490008880F /* PictureTakingViewControllerSpec.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,7 @@
 		B086A63E1BD1DE82007DEA7C /* UIViewController+TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+TestHelper.swift"; sourceTree = "<group>"; };
 		B0EE4CE21BD1EE60005CDBC6 /* UIControl+TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+TestHelpers.swift"; sourceTree = "<group>"; };
 		B0EE4CE41BD1F59B005CDBC6 /* UIBarButtonItem+TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+TestHelpers.swift"; sourceTree = "<group>"; };
+		B0EE4CE81BD289A6005CDBC6 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		B0FBA2DD1BD1D4A80008880F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B0FBA2E21BD1DB490008880F /* PictureTakingViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureTakingViewControllerSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +134,7 @@
 		B0FBA2DF1BD1D9E60008880F /* Common Elements */ = {
 			isa = PBXGroup;
 			children = (
+				B0EE4CE81BD289A6005CDBC6 /* CustomTextField.swift */,
 			);
 			name = "Common Elements";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				B0541B441BC8706E00C99260 /* AppDelegate.swift in Sources */,
 				B0541B471BC8706E00C99260 /* sculpture_swift.xcdatamodeld in Sources */,
 				B0FBA2DE1BD1D4A80008880F /* HomeViewController.swift in Sources */,
+				B0EE4CE91BD289A6005CDBC6 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
