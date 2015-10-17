@@ -13,6 +13,9 @@
 		B0541B4C1BC8706E00C99260 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4A1BC8706E00C99260 /* Main.storyboard */; };
 		B0541B4E1BC8706E00C99260 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4D1BC8706E00C99260 /* Images.xcassets */; };
 		B0541B511BC8706E00C99260 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4F1BC8706E00C99260 /* LaunchScreen.xib */; };
+		B086A63C1BD1DDD6007DEA7C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FBA2DD1BD1D4A80008880F /* HomeViewController.swift */; };
+		B086A63D1BD1DDD9007DEA7C /* PictureTakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0541B481BC8706E00C99260 /* PictureTakingViewController.swift */; };
+		B086A63F1BD1DE82007DEA7C /* UIViewController+TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B086A63E1BD1DE82007DEA7C /* UIViewController+TestHelper.swift */; };
 		B0FBA2DE1BD1D4A80008880F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FBA2DD1BD1D4A80008880F /* HomeViewController.swift */; };
 		B0FBA2E31BD1DB490008880F /* PictureTakingViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FBA2E21BD1DB490008880F /* PictureTakingViewControllerSpec.swift */; };
 /* End PBXBuildFile section */
@@ -28,7 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B0541B3E1BC8706D00C99260 /* sculpture-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sculpture-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0541B3E1BC8706D00C99260 /* SwiftSculptures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSculptures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0541B421BC8706E00C99260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0541B431BC8706E00C99260 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0541B461BC8706E00C99260 /* sculpture_swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = sculpture_swift.xcdatamodel; sourceTree = "<group>"; };
@@ -36,8 +39,9 @@
 		B0541B4B1BC8706E00C99260 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0541B4D1BC8706E00C99260 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B0541B501BC8706E00C99260 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B0541B561BC8706E00C99260 /* sculpture-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sculpture-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0541B561BC8706E00C99260 /* SwiftSculpturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSculpturesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0541B5B1BC8706E00C99260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B086A63E1BD1DE82007DEA7C /* UIViewController+TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+TestHelper.swift"; sourceTree = "<group>"; };
 		B0FBA2DD1BD1D4A80008880F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B0FBA2E21BD1DB490008880F /* PictureTakingViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureTakingViewControllerSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,8 +76,8 @@
 		B0541B3F1BC8706D00C99260 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B0541B3E1BC8706D00C99260 /* sculpture-swift.app */,
-				B0541B561BC8706E00C99260 /* sculpture-swiftTests.xctest */,
+				B0541B3E1BC8706D00C99260 /* SwiftSculptures.app */,
+				B0541B561BC8706E00C99260 /* SwiftSculpturesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +109,7 @@
 			children = (
 				B0541B5A1BC8706E00C99260 /* Supporting Files */,
 				B0FBA2E21BD1DB490008880F /* PictureTakingViewControllerSpec.swift */,
+				B086A63E1BD1DE82007DEA7C /* UIViewController+TestHelper.swift */,
 			);
 			path = "sculpture-swiftTests";
 			sourceTree = "<group>";
@@ -145,9 +150,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B0541B3D1BC8706D00C99260 /* sculpture-swift */ = {
+		B0541B3D1BC8706D00C99260 /* SwiftSculptures */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0541B601BC8706E00C99260 /* Build configuration list for PBXNativeTarget "sculpture-swift" */;
+			buildConfigurationList = B0541B601BC8706E00C99260 /* Build configuration list for PBXNativeTarget "SwiftSculptures" */;
 			buildPhases = (
 				B0541B3A1BC8706D00C99260 /* Sources */,
 				B0541B3B1BC8706D00C99260 /* Frameworks */,
@@ -157,14 +162,14 @@
 			);
 			dependencies = (
 			);
-			name = "sculpture-swift";
+			name = SwiftSculptures;
 			productName = "sculpture-swift";
-			productReference = B0541B3E1BC8706D00C99260 /* sculpture-swift.app */;
+			productReference = B0541B3E1BC8706D00C99260 /* SwiftSculptures.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B0541B551BC8706E00C99260 /* sculpture-swiftTests */ = {
+		B0541B551BC8706E00C99260 /* SwiftSculpturesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0541B631BC8706E00C99260 /* Build configuration list for PBXNativeTarget "sculpture-swiftTests" */;
+			buildConfigurationList = B0541B631BC8706E00C99260 /* Build configuration list for PBXNativeTarget "SwiftSculpturesTests" */;
 			buildPhases = (
 				B0541B521BC8706E00C99260 /* Sources */,
 				B0541B531BC8706E00C99260 /* Frameworks */,
@@ -175,9 +180,9 @@
 			dependencies = (
 				B0541B581BC8706E00C99260 /* PBXTargetDependency */,
 			);
-			name = "sculpture-swiftTests";
+			name = SwiftSculpturesTests;
 			productName = "sculpture-swiftTests";
-			productReference = B0541B561BC8706E00C99260 /* sculpture-swiftTests.xctest */;
+			productReference = B0541B561BC8706E00C99260 /* SwiftSculpturesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -198,7 +203,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B0541B391BC8706D00C99260 /* Build configuration list for PBXProject "sculpture-swift" */;
+			buildConfigurationList = B0541B391BC8706D00C99260 /* Build configuration list for PBXProject "SwiftSculptures" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -211,8 +216,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B0541B3D1BC8706D00C99260 /* sculpture-swift */,
-				B0541B551BC8706E00C99260 /* sculpture-swiftTests */,
+				B0541B3D1BC8706D00C99260 /* SwiftSculptures */,
+				B0541B551BC8706E00C99260 /* SwiftSculpturesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -253,7 +258,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B086A63F1BD1DE82007DEA7C /* UIViewController+TestHelper.swift in Sources */,
+				B086A63D1BD1DDD9007DEA7C /* PictureTakingViewController.swift in Sources */,
 				B0FBA2E31BD1DB490008880F /* PictureTakingViewControllerSpec.swift in Sources */,
+				B086A63C1BD1DDD6007DEA7C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +270,7 @@
 /* Begin PBXTargetDependency section */
 		B0541B581BC8706E00C99260 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B0541B3D1BC8706D00C99260 /* sculpture-swift */;
+			target = B0541B3D1BC8706D00C99260 /* SwiftSculptures */;
 			targetProxy = B0541B571BC8706E00C99260 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -376,7 +384,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "sculpture-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftSculptures;
 			};
 			name = Debug;
 		};
@@ -386,7 +394,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "sculpture-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftSculptures;
 			};
 			name = Release;
 		};
@@ -404,7 +412,7 @@
 				);
 				INFOPLIST_FILE = "sculpture-swiftTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftSculpturesTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sculpture-swift.app/sculpture-swift";
 			};
 			name = Debug;
@@ -419,7 +427,7 @@
 				);
 				INFOPLIST_FILE = "sculpture-swiftTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftSculpturesTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sculpture-swift.app/sculpture-swift";
 			};
 			name = Release;
@@ -427,7 +435,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B0541B391BC8706D00C99260 /* Build configuration list for PBXProject "sculpture-swift" */ = {
+		B0541B391BC8706D00C99260 /* Build configuration list for PBXProject "SwiftSculptures" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0541B5E1BC8706E00C99260 /* Debug */,
@@ -436,7 +444,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B0541B601BC8706E00C99260 /* Build configuration list for PBXNativeTarget "sculpture-swift" */ = {
+		B0541B601BC8706E00C99260 /* Build configuration list for PBXNativeTarget "SwiftSculptures" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0541B611BC8706E00C99260 /* Debug */,
@@ -445,7 +453,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B0541B631BC8706E00C99260 /* Build configuration list for PBXNativeTarget "sculpture-swiftTests" */ = {
+		B0541B631BC8706E00C99260 /* Build configuration list for PBXNativeTarget "SwiftSculpturesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0541B641BC8706E00C99260 /* Debug */,

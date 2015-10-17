@@ -1,6 +1,6 @@
 //
 //  PictureTakingViewControllerSpec.swift
-//  sculpture-swift
+//  SwiftSculptures
 //
 //  Created by Canna Wen on 2015-10-16.
 //  Copyright (c) 2015 Canna Wen. All rights reserved.
@@ -15,17 +15,7 @@ class PictureTakingViewControllerSpec : XCTestCase {
 
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        let storyboard = UIStoryboard(name: "Main",
-            bundle: NSBundle.mainBundle())
-        let navigationController = storyboard.instantiateInitialViewController() as! UINavigationController
-        viewController = navigationController.topViewController as! ViewController
-        
-        UIApplication.sharedApplication().keyWindow!.rootViewController = viewController
-        
-        // The One Weird Trick!
-        let _ = navigationController.view
-        let _ = viewController.view
+        let viewController = PictureTakingViewController.viewController()
     }
     
     override func tearDown() {
