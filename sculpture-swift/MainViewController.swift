@@ -9,10 +9,34 @@
 import UIKit
 
 class MainViewController : UIViewController {
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    let imagePickerController = UIImagePickerController();
+    
+}
 
-    @IBAction func selectedCamera(sender: UIBarButtonItem) {
-        
+// MARK: - Taking pictures
+
+extension MainViewController : UIImagePickerControllerDelegate {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad();
+        imagePickerController.delegate = self;
     }
+    
+    @IBAction func selectedCamera(sender: UIBarButtonItem) {
+        presentViewController(imagePickerController, animated: true, completion: nil);
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
+        imageView.image = image;
+        dismissViewControllerAnimated(true, completion: nil);
+    }
+    
+}
+
+extension MainViewController : UINavigationControllerDelegate {
     
 }
 

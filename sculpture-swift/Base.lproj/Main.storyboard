@@ -15,7 +15,18 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0pN-oZ-ivt">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0pN-oZ-ivt" secondAttribute="trailing" id="Gip-hc-MlD"/>
+                            <constraint firstAttribute="bottom" secondItem="0pN-oZ-ivt" secondAttribute="bottom" id="WwW-qc-MEv"/>
+                            <constraint firstItem="0pN-oZ-ivt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bCJ-Ad-vDe"/>
+                            <constraint firstItem="0pN-oZ-ivt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cGh-1v-J5f"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="P2D-oX-dSk">
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="1cS-fw-Iea">
@@ -24,6 +35,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="0pN-oZ-ivt" id="xrj-D1-pkE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
