@@ -15,17 +15,14 @@ class PictureTakingViewControllerSpec : XCTestCase {
 
     override func setUp() {
         super.setUp()
-        let viewController = PictureTakingViewController().viewController()
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+        viewController = PictureTakingViewController().viewController() as! PictureTakingViewController
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    func testTappingRightBarButtonItemShowsImagePicker() {
+        let button = viewController.navigationItem.rightBarButtonItem as UIBarButtonItem!
+        button.tap()
+        let topVc = viewController.navigationController?.topViewController
+        XCTAssert(topVc is UIImagePickerController, "Image picker should be shown")
     }
 
 }

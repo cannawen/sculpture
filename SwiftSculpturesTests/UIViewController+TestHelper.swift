@@ -11,10 +11,11 @@ import UIKit
 extension UIViewController {
     
     func viewController() -> UIViewController {
-        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle(forClass: self.classForCoder))
         let identifier = toString(self.dynamicType).componentsSeparatedByString(".").last
         let viewController = storyboard.instantiateViewControllerWithIdentifier(identifier!) as! UIViewController
-        UIApplication.sharedApplication().keyWindow!.rootViewController = viewController
+        let navController = UINavigationController(rootViewController: viewController)
+        UIApplication.sharedApplication().keyWindow!.rootViewController = navController
         let _ = viewController.view
         return viewController
     }

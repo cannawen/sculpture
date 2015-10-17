@@ -12,11 +12,13 @@
 		B0541B491BC8706E00C99260 /* PictureTakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0541B481BC8706E00C99260 /* PictureTakingViewController.swift */; };
 		B0541B4E1BC8706E00C99260 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4D1BC8706E00C99260 /* Images.xcassets */; };
 		B086A63C1BD1DDD6007DEA7C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FBA2DD1BD1D4A80008880F /* HomeViewController.swift */; };
-		B086A63D1BD1DDD9007DEA7C /* PictureTakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0541B481BC8706E00C99260 /* PictureTakingViewController.swift */; };
 		B086A63F1BD1DE82007DEA7C /* UIViewController+TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B086A63E1BD1DE82007DEA7C /* UIViewController+TestHelper.swift */; };
 		B0EE4CE01BD1E925005CDBC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4A1BC8706E00C99260 /* Main.storyboard */; };
 		B0EE4CE11BD1E925005CDBC6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4F1BC8706E00C99260 /* LaunchScreen.xib */; };
 		B0EE4CE31BD1EE60005CDBC6 /* UIControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EE4CE21BD1EE60005CDBC6 /* UIControl+TestHelpers.swift */; };
+		B0EE4CE51BD1F59B005CDBC6 /* UIBarButtonItem+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EE4CE41BD1F59B005CDBC6 /* UIBarButtonItem+TestHelpers.swift */; };
+		B0EE4CE61BD1F9A9005CDBC6 /* PictureTakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0541B481BC8706E00C99260 /* PictureTakingViewController.swift */; };
+		B0EE4CE71BD1F9EC005CDBC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4A1BC8706E00C99260 /* Main.storyboard */; };
 		B0FBA2DE1BD1D4A80008880F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FBA2DD1BD1D4A80008880F /* HomeViewController.swift */; };
 		B0FBA2E31BD1DB490008880F /* PictureTakingViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FBA2E21BD1DB490008880F /* PictureTakingViewControllerSpec.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +46,7 @@
 		B0541B5B1BC8706E00C99260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B086A63E1BD1DE82007DEA7C /* UIViewController+TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+TestHelper.swift"; sourceTree = "<group>"; };
 		B0EE4CE21BD1EE60005CDBC6 /* UIControl+TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+TestHelpers.swift"; sourceTree = "<group>"; };
+		B0EE4CE41BD1F59B005CDBC6 /* UIBarButtonItem+TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+TestHelpers.swift"; sourceTree = "<group>"; };
 		B0FBA2DD1BD1D4A80008880F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B0FBA2E21BD1DB490008880F /* PictureTakingViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureTakingViewControllerSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +116,7 @@
 				B0FBA2E21BD1DB490008880F /* PictureTakingViewControllerSpec.swift */,
 				B086A63E1BD1DE82007DEA7C /* UIViewController+TestHelper.swift */,
 				B0EE4CE21BD1EE60005CDBC6 /* UIControl+TestHelpers.swift */,
+				B0EE4CE41BD1F59B005CDBC6 /* UIBarButtonItem+TestHelpers.swift */,
 			);
 			path = SwiftSculpturesTests;
 			sourceTree = "<group>";
@@ -240,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0EE4CE71BD1F9EC005CDBC6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +267,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B086A63F1BD1DE82007DEA7C /* UIViewController+TestHelper.swift in Sources */,
-				B086A63D1BD1DDD9007DEA7C /* PictureTakingViewController.swift in Sources */,
 				B0FBA2E31BD1DB490008880F /* PictureTakingViewControllerSpec.swift in Sources */,
 				B0EE4CE31BD1EE60005CDBC6 /* UIControl+TestHelpers.swift in Sources */,
+				B0EE4CE61BD1F9A9005CDBC6 /* PictureTakingViewController.swift in Sources */,
+				B0EE4CE51BD1F59B005CDBC6 /* UIBarButtonItem+TestHelpers.swift in Sources */,
 				B086A63C1BD1DDD6007DEA7C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
