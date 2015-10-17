@@ -16,6 +16,7 @@
 		B086A63F1BD1DE82007DEA7C /* UIViewController+TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B086A63E1BD1DE82007DEA7C /* UIViewController+TestHelper.swift */; };
 		B0EE4CE01BD1E925005CDBC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4A1BC8706E00C99260 /* Main.storyboard */; };
 		B0EE4CE11BD1E925005CDBC6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0541B4F1BC8706E00C99260 /* LaunchScreen.xib */; };
+		B0EE4CE31BD1EE60005CDBC6 /* UIControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EE4CE21BD1EE60005CDBC6 /* UIControl+TestHelpers.swift */; };
 		B0FBA2DE1BD1D4A80008880F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FBA2DD1BD1D4A80008880F /* HomeViewController.swift */; };
 		B0FBA2E31BD1DB490008880F /* PictureTakingViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FBA2E21BD1DB490008880F /* PictureTakingViewControllerSpec.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		B0541B561BC8706E00C99260 /* SwiftSculpturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSculpturesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0541B5B1BC8706E00C99260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B086A63E1BD1DE82007DEA7C /* UIViewController+TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+TestHelper.swift"; sourceTree = "<group>"; };
+		B0EE4CE21BD1EE60005CDBC6 /* UIControl+TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+TestHelpers.swift"; sourceTree = "<group>"; };
 		B0FBA2DD1BD1D4A80008880F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B0FBA2E21BD1DB490008880F /* PictureTakingViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureTakingViewControllerSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +112,7 @@
 				B0541B5A1BC8706E00C99260 /* Supporting Files */,
 				B0FBA2E21BD1DB490008880F /* PictureTakingViewControllerSpec.swift */,
 				B086A63E1BD1DE82007DEA7C /* UIViewController+TestHelper.swift */,
+				B0EE4CE21BD1EE60005CDBC6 /* UIControl+TestHelpers.swift */,
 			);
 			path = SwiftSculpturesTests;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				B086A63F1BD1DE82007DEA7C /* UIViewController+TestHelper.swift in Sources */,
 				B086A63D1BD1DDD9007DEA7C /* PictureTakingViewController.swift in Sources */,
 				B0FBA2E31BD1DB490008880F /* PictureTakingViewControllerSpec.swift in Sources */,
+				B0EE4CE31BD1EE60005CDBC6 /* UIControl+TestHelpers.swift in Sources */,
 				B086A63C1BD1DDD6007DEA7C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
