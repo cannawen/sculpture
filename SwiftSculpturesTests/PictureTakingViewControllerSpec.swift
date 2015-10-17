@@ -21,8 +21,8 @@ class PictureTakingViewControllerSpec : XCTestCase {
     func testTappingRightBarButtonItemShowsImagePicker() {
         let button = viewController.navigationItem.rightBarButtonItem as UIBarButtonItem!
         button.tap()
-        let topVc = viewController.navigationController?.topViewController
-        XCTAssert(topVc is UIImagePickerController, "Image picker should be shown")
+        let presentedVc = viewController.navigationController?.presentedViewController
+        XCTAssert(presentedVc is UIImagePickerController, "Image picker should be shown")
     }
 
 }
