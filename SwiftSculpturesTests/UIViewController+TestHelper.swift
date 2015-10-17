@@ -10,9 +10,10 @@ import UIKit
 
 extension UIViewController {
     
-    static func viewController() -> UIViewController {
+    func viewController() -> UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-        let viewController = storyboard.instantiateViewControllerWithIdentifier(NSStringFromClass(self.dynamicType)) as! UIViewController
+        let identifier = toString(self.dynamicType).componentsSeparatedByString(".").last
+        let viewController = storyboard.instantiateViewControllerWithIdentifier(identifier!) as! UIViewController
         UIApplication.sharedApplication().keyWindow!.rootViewController = viewController
         let _ = viewController.view
         return viewController
